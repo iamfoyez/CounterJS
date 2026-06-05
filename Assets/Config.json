@@ -1,0 +1,113 @@
+{
+	"Strategies": ["Hi-Lo", "Wong Halves"],
+	"Deviations": [
+		{
+			"Hand": "Insurance",
+			"TrueCount": 2.4,
+			"Action": "Take Insurance",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "16 vs. 10",
+			"TrueCount": 0.5,
+			"Action": "Stand",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "15 vs. 10",
+			"TrueCount": 4,
+			"Action": "Stand",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "10 vs. 10",
+			"TrueCount": 4,
+			"Action": "Double Down",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "9 vs. 2",
+			"TrueCount": 1,
+			"Action": "Double Down",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "11 vs. Ace",
+			"TrueCount": 1,
+			"Action": "Double Down",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "16 vs. 9",
+			"TrueCount": 4,
+			"Action": "Stand",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "12 vs. 3",
+			"TrueCount": 2,
+			"Action": "Stand",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "12 vs. 2",
+			"TrueCount": 3,
+			"Action": "Stand",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "12 vs. 3",
+			"TrueCount": 2,
+			"Action": "Stand",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "10 vs. Ace",
+			"TrueCount": 3,
+			"Action": "Double Down",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "12 vs. 5",
+			"TrueCount": -2,
+			"Action": "Hit",
+			"ThresholdConditionOver": false
+		},
+		{
+			"Hand": "12 vs. 6",
+			"TrueCount": -1,
+			"Action": "Hit",
+			"ThresholdConditionOver": false
+		},
+		{
+			"Hand": "13 vs. 2",
+			"TrueCount": -1,
+			"Action": "Hit",
+			"ThresholdConditionOver": false
+		},
+		{
+			"Hand": "13 vs. 3",
+			"TrueCount": -2,
+			"Action": "Hit",
+			"ThresholdConditionOver": false
+		},
+		{
+			"Hand": "13 vs. 4",
+			"TrueCount": -3,
+			"Action": "Hit",
+			"ThresholdConditionOver": false
+		},
+		{
+			"Hand": "15 vs. Ace",
+			"TrueCount": 5,
+			"Action": "Stand",
+			"ThresholdConditionOver": true
+		},
+		{
+			"Hand": "16 vs. Ace",
+			"TrueCount": 6,
+			"Action": "Stand",
+			"ThresholdConditionOver": true
+		}
+	]
+}

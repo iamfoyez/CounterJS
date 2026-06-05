@@ -1,0 +1,119 @@
+{
+	"1": {
+		"Name": "Ace",
+		"Symbol": "A",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": -1,
+			"Wong Halves": -1
+		}
+	},
+	"2": {
+		"Name": "Two",
+		"Symbol": "2",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": 1,
+			"Wong Halves": 0.5
+		}
+	},
+	"3": {
+		"Name": "Three",
+		"Symbol": "3",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": 1,
+			"Wong Halves": 1
+		}
+	},
+	"4": {
+		"Name": "Four",
+		"Symbol": "4",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": 1,
+			"Wong Halves": 1
+		}
+	},
+	"5": {
+		"Name": "Five",
+		"Symbol": "5",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": 1,
+			"Wong Halves": 1.5
+		}
+	},
+	"6": {
+		"Name": "Six",
+		"Symbol": "6",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": 1,
+			"Wong Halves": 1
+		}
+	},
+	"7": {
+		"Name": "Seven",
+		"Symbol": "7",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": 0,
+			"Wong Halves": 0.5
+		}
+	},
+	"8": {
+		"Name": "Eight",
+		"Symbol": "8",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": 0,
+			"Wong Halves": 0
+		}
+	},
+	"9": {
+		"Name": "Nine",
+		"Symbol": "9",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": 0,
+			"Wong Halves": -0.5
+		}
+	},
+	"10": {
+		"Name": "Ten",
+		"Symbol": "10",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": -1,
+			"Wong Halves": -1
+		}
+	},
+	"11": {
+		"Name": "Jack",
+		"Symbol": "J",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": -1,
+			"Wong Halves": -1
+		}
+	},
+	"12": {
+		"Name": "Queen",
+		"Symbol": "Q",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": -1,
+			"Wong Halves": -1
+		}
+	},
+	"13": {
+		"Name": "King",
+		"Symbol": "K",
+		"Frequency": 0,
+		"Strategy": {
+			"Hi-Lo": -1,
+			"Wong Halves": -1
+		}
+	}
+}
