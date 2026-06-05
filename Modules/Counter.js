@@ -122,7 +122,7 @@ export default class Counter {
 	 * @returns {Object} An object containing the active deviations and their actions.
 	 */
 	getActiveDeviations() {
-		let activeDeviations = {};
+		let activeDeviations = [];
 		const trueCount = this.getTrueCount()[ this.Strategy ];
 		for ( let i = 0; i < Config.Deviations.length; i++ ) {
 			const deviation = Config.Deviations[ i ];
@@ -130,13 +130,19 @@ export default class Counter {
 				deviation.ThresholdConditionOver &&
 				trueCount >= deviation.TrueCount
 			) {
-				activeDeviations[deviation.Hand] = deviation.Action;
+				activeDeviations.push({
+					Hand: deviation.Hand,
+					Action: deviation.Action,
+				});
 			}
 			if (
 				!deviation.ThresholdConditionOver &&
 				trueCount <= deviation.TrueCount
 			) {
-				activeDeviations[deviation.Hand] = deviation.Action;
+				activeDeviations.push({
+					Hand: deviation.Hand,
+					Action: deviation.Action,
+				});
 			}
 		}
 		return activeDeviations;
@@ -166,29 +172,31 @@ export default class Counter {
 	displayState() {
 		let returnState = {};
 
-		returnState['Cards'] = {};
+		returnState['Cards'] = [];
 
 		// Loop through the CardsTally and add the card details to the returnState
 		for ( let card in this.CardsTally ) {
-			returnState['Cards'][ this.CardsTally[card]['Symbol'] ] = {
+			returnState['Cards'].push({
+				"Card": this.CardsTally[card]['Symbol'],
 				'Frequency': {
 					'CardsLeft': this.getIndividualCardLeft( card ).CardsLeft,
 					'CardsTotal': this.NumberOfDecks * 4
 				},
 				'ChanceOfPair': this.getChanceOfGettingPair( card ).ChanceOfPair,
 				'ChanceOfCard': this.getChanceOfGettingCard( card ).Chance
-			};
+			});
 		}
 
 		returnState['ActiveDeviations'] = this.getActiveDeviations();
 
 		// Add the running count and true count for each strategy to the returnState
-		returnState['Count'] = {};
+		returnState['Count'] = [];
 		for ( let strategy in this.RunningCount ) {
-			returnState['Count'][ strategy ] = {
+			returnState['Count'].push({
+				'Strategy': strategy,
 				'RunningCount': this.RunningCount[ strategy ],
 				'TrueCount': this.getTrueCount()[ strategy ]
-			};
+			});
 		}
 
 		return returnState;
