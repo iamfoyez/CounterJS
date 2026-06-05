@@ -1,21 +1,23 @@
 {
-  "name": "counterjs",
-  "version": "1.0.0",
-  "description": "Hi-Lo Counter for Blackjack",
-  "homepage": "https://github.com/iamfoyez/CounterJS#readme",
-  "bugs": {
-    "url": "https://github.com/iamfoyez/CounterJS/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamfoyez/CounterJS.git"
-  },
-  "license": "ISC",
-  "author": "iamfoyez",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  }
+	"name": "counterjs",
+	"version": "1.0.0",
+	"description": "Hi-Lo Counter for Blackjack",
+	"homepage": "https://github.com/iamfoyez/CounterJS#readme",
+	"bugs": {
+		"url": "https://github.com/iamfoyez/CounterJS/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/iamfoyez/CounterJS.git"
+	},
+	"license": "ISC",
+	"author": "iamfoyez",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"start": "node ConsoleUI.js"
+	},
+	"dependencies": {
+		"console-table-printer": "^2.16.0"
+	}
 }
