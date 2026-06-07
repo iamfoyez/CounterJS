@@ -32,6 +32,9 @@ function displayStatistics(data) {
 	});
 	printTable(mappedCards);
 	printTable(data.Count);
+	console.log(data['LastFiveCards'].map(c => {
+		return c.Symbol
+	}).join(" "));
 }
 
 function runCounter() {

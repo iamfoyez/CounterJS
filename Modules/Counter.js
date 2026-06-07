@@ -199,6 +199,8 @@ export default class Counter {
 			});
 		}
 
+		returnState['LastFiveCards'] = this.getLastFiveCards();
+
 		return returnState;
 	}
 
